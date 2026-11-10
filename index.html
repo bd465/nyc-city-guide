@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYC Travel Guide</title>
+    <link rel="stylesheet" href="styles/site.css">
+</head>
+<body class="home">
+    <header>
+        <div class="header-top">
+            <img src="images/logo.png" alt="NYC Travel Guide logo" class="logo">
+            <h1>NYC Travel Guide</h1>
+            <button class="hamburger-button" type="button" aria-label="Navigation menu">☰</button>
+        </div>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html"><strong>Home</strong></a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="neighborhoods.html">Neighborhoods</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="travel-tips.html">Travel Tips</a></li>
+                <li><a href="map.html">Map</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Welcome to New York City</h2>
+            <div class="content">
+                <div>
+                    <p>New York City is one of the most exciting and fast-paced cities in the world. Known for its skyline, neighborhoods, food, and constant energy, the city offers something for every kind of visitor.</p>
+                    <p>Whether you are planning your first trip or returning to explore more, this guide is designed to help you discover the city in a way that feels organized, approachable, and memorable.</p>
+                    <button class="open-modal-button" type="button">View Larger Photo</button>
+                </div>
+
+                <figure>
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="images/nyc-skyline.jpg">
+                        <img src="images/nyc-skyline.jpg" alt="New York City skyline with tall buildings and sunset view">
+                    </picture>
+                </figure>
+            </div>
+        </section>
+
+        <section class="reverse">
+            <h2>About This Guide</h2>
+            <div class="content">
+                <figure>
+                    <img src="images/times-square.jpg" alt="Times Square with bright billboards and city crowds">
+                </figure>
+                <p>This website is made for visitors who want to explore New York City in an easy and organized way. Instead of overwhelming you with too much information at once, each page focuses on a different part of the city experience, from major attractions to neighborhood recommendations and practical travel advice.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>What You’ll Discover</h2>
+            <div class="content">
+                <figure>
+                    <img src="images/central-park.jpg" alt="Central Park with trees, walking paths, and city skyline in the background">
+                </figure>
+                <p>You can use this guide to find famous landmarks, learn what makes each neighborhood different, discover food spots across a range of budgets, and pick up travel tips that make getting around the city easier. From Central Park and Times Square to places like SoHo, Chinatown, and Williamsburg, the site highlights both classic stops and more local experiences.</p>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal-overlay hidden">
+        <dialog class="modal-box">
+            <button class="close-modal-button" type="button" aria-label="Close modal">Close</button>
+            <div class="modal-content">
+                <img src="images/nyc-skyline.jpg" alt="New York City skyline with tall buildings and a sunset view">
+                <div class="modal-text">
+                    <h3>NYC Skyline</h3>
+                    <p>This larger image gives visitors a clearer view of the city skyline and helps introduce the visual tone of the site.</p>
+                </div>
+            </div>
+        </dialog>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 NYC Travel Guide. All rights reserved.</p>
+    </footer>
+<script src="scripts/jquery-3.7.1.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
